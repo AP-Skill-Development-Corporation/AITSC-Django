@@ -1,0 +1,21 @@
+Day-01[25-05-2022]:
+===================
+	Good Morning to All...
+
+	Web Development Using Django
+
+	Python installation Check:
+	==========================
+		-> cmd
+		-> python -V
+
+	Python Version Check:
+	=====================
+		-> cmd
+		-> python --version 
+
+	DataStructures
+	
+	python -m pip install --upgrade pip
+
+	
