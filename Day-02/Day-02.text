@@ -1,0 +1,76 @@
+Day-02:[26-05-2022]:
+====================
+	
+	Django Installation:
+	====================
+		=> cmd
+		=> Own Versions:
+			=> pip install django==3.0
+		=> Existing Version:
+			=> pip install django
+
+		Uninstallation of Django:
+		=========================
+		=> own Version:
+			=> pip uninstall django==3.0
+		=> Existing Vversion if not specified  in installation
+			=> pip uninstall django
+
+	Project Creation:
+	=================
+		=> cmd
+		=> django-admin startproject "projectname"
+
+	Folders and Files after creating a Project:
+	===========================================
+		> Projectname [Admin App]
+		> manage.py [Services]
+
+	Creation of Project Files:
+	==========================
+		=> init => existing of folder or files can be considered as a python file
+		=> asgi => Asynchronous Gateway Interface
+		=> wsgi => Web Socket Gateway Interface
+		asgi and wsgi are used in project hosting for request and response for a user or client
+		=> settings => secreykey,allowedhost,debugging,installedapps,urlconfig,databases,templates,authentication,static,mail
+		=> urls => urlpatterns if the url is existing in a url or not can be checked in it.
+
+	Execution of a project:
+	========================
+	> cmd
+	> We need to open the path where manage.py exists
+	> manage.py runserver 
+		or 
+	> python manage.py runserver
+	> In browser we need to open the url with host address as 
+		=> localhost:8000
+		=> http://127.0.0.1:8000
+	
+	Port Number Change:
+	===================
+	> cmd
+	> manage.py runserver "portnumber"
+	> localhost:portnumber
+
+	To Break a Django Server:
+	=========================
+	> cntrl + c 
+	> cmd enter => In browser page will be refreshed
+
+	Creating an App:
+	================
+	> cmd
+	> manage.py startapp "appname"
+		or
+	> django-admin startapp "appname"
+
+	App Files:
+	==========
+	=> init => folder or files can be accessed as a python file
+	=> admin => User table access or modifying the views
+	=> apps => app configuration
+	=> test => for testing the project in unit or blackbox
+	=> models => Table creation 
+	=> view => Logic
+
+	
