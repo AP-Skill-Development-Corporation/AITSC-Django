@@ -9,3 +9,9 @@ Django for Section-C
   - Django installation check,Project Creation
   - Running of Project,App Creation and Configuration
   - Dynamic URL Mapping and HttpResponse with string,html tags included for response
+
+## Day-03(27-05-2022):
+  - Dynamic url mapping with html structure
+  - Accessing internal,inline css and javascript by using HttpResponse
+  - Template file accesssing with sample data
+  - Access external file resources like external css,js and images
