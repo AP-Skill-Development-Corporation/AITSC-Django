@@ -15,3 +15,7 @@ Django for Section-C
   - Accessing internal,inline css and javascript by using HttpResponse
   - Template file accesssing with sample data
   - Access external file resources like external css,js and images
+
+## Day-04(28-05-2022):
+  - Bootstrap 4 template by using include and extends to access the files,grid system,colors,shadow,text alignments,margin,padding etc.,
+  - Model Creation,shell commands and inserting a record into a database
