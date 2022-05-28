@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AITS College</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">AITS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<div class="container">
+  <div class="row my-5">
+    <div class="col-md">
+      <div class="card shadow-lg p-2">
+        <h3 class="bg-warning text-light text-center p-2 border rounded my-2">Registration</h3>
+        <form class="m-2">
+          <input type="text" name="" placeholder="username" class="form-control my-2">
+          <input type="password" name="" placeholder="password" class="form-control my-2">
+          <input type="email" name="" placeholder="Emailid" class="form-control my-2">
+          <select class="form-control my-2">
+            <option value="0">Select Your Year</option>
+            <option value="1">1st year</option>
+            <option value="2">2nd year</option>
+            <option value="3">3rd year</option>
+            <option value="4">4th year</option>
+          </select>
+          <div class="row">
+              <input type="clear" value="Reset" class="btn btn-outline-danger col-sm mx-2">
+              <input type="submit" class="btn btn-outline-success col-sm mx-2" value="Subscribe">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="card col-md shadow-lg h-100">
+      <h3 class="bg-info text-light text-center p-2 border rounded my-3">Login</h3>
+      <form>
+        <input type="text" name="" placeholder="username" class="form-control my-2">
+        <input type="password" name="" placeholder="password" class="form-control my-2">
+        <div class="row my-3">
+          <input type="clear" value="Reset" class="btn btn-outline-danger col-sm mx-2">
+          <input type="submit" class="btn btn-outline-success col-sm mx-2" value="Subscribe">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
