@@ -1,0 +1,45 @@
+{% extends 'html/base.html' %}
+{% block content %}
+<div class="container mt-3">
+	{% if messages %}
+	{% for i in messages %}
+	<div class="alert alert-{{i.tags}} alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  {{i}}
+</div>
+	{% endfor %}
+	{% endif %}
+	<div class="row">
+		<div class="card col-md-4 shadow-lg mx-2 h-100">
+			<h3 class="bg-primary text-light text-center p-2 my-2">Add Log</h3>
+			<form method="post">
+				{% csrf_token %}
+				<input type="text" name="sub" class="form-control my-2" placeholder="Enter Subject">
+				<input type="text" name="titl" class="form-control my-2" placeholder="Enter Title">
+				<textarea class="form-control my-2" row="5" name="desc"></textarea>
+				<div class="row my-2">
+					<input type="reset" name="Clear" class="btn btn-outline-danger col-sm mx-2">
+					<input type="submit" name="Create" class="btn btn-outline-success col-sm mx-2">
+				</div>
+			</form>
+		</div>
+		<div class="card col-md shadow-lg mx-2">
+			<h3 class="bg-secondary text-light text-center p-2 my-2 border rounded">Log Details</h3>
+			<table class="table table-hover table-striped">
+				<tr>
+					<th>sno</th>
+					<th>Title</th>
+					<th>Operations</th>
+				</tr>
+				{% for i in lg %}
+				<tr>
+					<td>{{forloop.counter}}</td>
+					<td><a href="#">{{i.title}}</a></td>
+					<td><a href="{% url 'up' i.id %}" class="btn btn-info mx-1">Edit</a><a href="{% url 'd' i.id %}" class="btn btn-danger mx-1">Delete</a></td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</div>
+</div>
+{% endblock %}

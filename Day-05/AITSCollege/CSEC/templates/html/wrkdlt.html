@@ -1,0 +1,16 @@
+{% extends 'html/base.html' %}
+{% block content %}
+<div class="container mt-4">
+	<div class="card col-md-6 mx-auto">
+		<h3 class="bg-warning text-light text-center border rounded my-2 p-2">Delete Log</h3>
+		<form method="post">
+			{% csrf_token %}
+			Are you Sure You want to delete {{s.sb}}?
+			<div class="row my-2 mx-2">
+				<a href="{% url 'mk' %}" class="btn btn-danger col-sm mx-1">No</a>
+				<input type="submit" value="Confirm" class="btn btn-success mx-1 col-sm">
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/sample.css' %}">
+	<script type="text/javascript" src="{% static 'js/demo.js' %}"></script>
+</head>
+<body>
+	<img src="{% static 'images/kl.png' %}" height="30px" width="50px">
+	<h3>Register Here</h3>
+	<form method="post">
+		{% csrf_token %}
+		<label>Student Name: </label>
+		<input type="text" name="sn"><br/>
+		<label>Student Age: </label>
+		<input type="number" name="sa"><br/>
+		<label>Select Your Branch: </label>
+		<select name="sb">
+			<option value="fst">1st Year</option>
+			<option value="scnd">2nd Year</option>
+			<option value="trd">3rd Year</option>
+			<option value="fnl">4th Year</option>
+		</select><br/>
+		<input type="submit" value="Register">
+	</form>
+
+</body>
+</html>
