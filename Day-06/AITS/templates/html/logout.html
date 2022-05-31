@@ -1,0 +1,14 @@
+{% extends 'html/base.html' %}
+{% block title %}Logout {% endblock %}
+{% block content %}
+<div class="card col-md-6 mx-auto shadow-lg">
+	<h4>Logout</h4>
+	<div class="card-body">
+		<h5>Are you sure you want to login again?</h5>
+		<div class="row my-2">
+			<a href="{% url 'hm' %}" class="btn btn-outline-warning mx-1 col-sm">Back to Home</a>
+			<a href="{% url 'lg' %}" class="btn btn-outline-secondary col-sm mx-1">Login</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

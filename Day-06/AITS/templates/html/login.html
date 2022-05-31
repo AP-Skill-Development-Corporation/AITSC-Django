@@ -1,0 +1,16 @@
+{% extends 'html/base.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="card col-md-6 mx-auto shadow-lg">
+	<h4>Login</h4>
+	<form method="post">
+		{% csrf_token %}
+		<input type="text" name="username" class="form-control my-2" placeholder="Username">
+		<input type="password" name="password" class="form-control my-2" placeholder="Password">
+		<div class="row my-2">
+			<a href="{% url 'rg' %}" class="btn btn-outline-warning mx-1 col-sm">New User</a>
+			<input type="submit" value="Login" class="btn btn-outline-success mx-1 col-sm">
+		</div>
+	</form>
+</div>
+{% endblock %}
